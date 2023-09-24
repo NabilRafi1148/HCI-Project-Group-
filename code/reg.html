@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <a href="index.html"><img src="./assets/logo.png" alt=""></a> 
+        </div>
+        <nav>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="coffee.html"><li>Coffee</li></a>
+                <a href="events.html"><li>Events</li></a>
+                <a href="aboutus.html"><li>About Us</li></a>
+                <a href="reg.html" style="color:grey"><li>Register</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div class="regform">
+        <form action="./index.html">
+            <h2>Register Your Account</h2>
+            <br>
+            <label for="">Name :</label>
+            <br>
+            <input type="text" name="in_name" id="in_name">
+            <br>
+            <label for="">Email :</label>
+            <br>
+            <input type="email" name="in_email" id="in_email">
+            <br>
+            <label for="">Password :</label>
+            <br>
+            <input type="password" name="in_pass" id="in_pass" >
+            <br>
+            <label for="">Age :</label>
+            <br>
+            <input type="number" name="in_age" id="in_age" >
+            <br>
+            <label for="">Address :</label>
+            <br>
+            <textarea name="in_address" id="in_address" cols="30" rows="10" ></textarea>
+            <br>
+            <label for="">Gender :</label>
+            <br>
+            <input type="radio" name="in_gender" id="in_gender_male"> Male
+            <input type="radio" name="in_gender" id="in_gender_female"> Female
+            <br>
+            <input type='checkbox' name="in_check" id="in_check">I agree with Terms and Conditions
+            <br>            
+            <div class="submitbtn">
+                <input type="submit" value="Submit" onclick="return validate()">
+            </div>
+            
+        </form>
+
+    </div>
+
+    <footer>
+        &copy;May 2022
+    </footer>
+    
+</body>
+</html>

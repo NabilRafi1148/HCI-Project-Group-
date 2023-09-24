@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(147, 67, 4);
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav ul a{
+    text-align: center;
+    padding: 0px 30px;
+    text-decoration: none;
+    color: white;
+}
+nav ul a:hover{
+    color:grey;
+    transition: 0.5s;
+}   
+
+.briefdesc{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(210, 105, 30, 0.507);
+    border-top: 0.5px white solid;
+    border-bottom: 0.5px white solid;
+}
+
+.descimg{
+    padding: 0px 75px;
+}
+
+.descimg img{
+    width: 500px;
+    height: 500px;
+    border-radius: 10%;
+}
+
+.desc{
+    padding: 0px 5px;
+    font-size: 25px;
+}
+
+.events{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(210, 105, 30, 0.507);
+    border-top: 0.5px white solid;
+    border-bottom: 0.5px white solid;
+}
+.eventsimg{
+    padding: 0vw 75px;
+}
+
+.eventsimg img{
+    width: 450px;
+    height: 450px;
+    border-radius: 10%;
+}
+
+.eventsdesc{
+    padding: 0px 5px;
+    font-size: 25px;
+}
+
+.events:hover{
+    opacity: 70%;
+    background-color: white;
+}
+.mission{
+    background-image: url("./assets/kopiblur1.png");
+    color: white;
+}
+
+.ms{
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.parallax{
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner{
+    border-top: 0.5px white solid;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: rgba(210, 105, 30, 0.507);
+    gap: 5px;
+}
+
+.item{
+    padding: 10px 10px;
+    border: 3px white solid;
+}
+
+.item img{
+    height: 250px;
+    width: 250px;
+}
+
+.menu :hover{
+    opacity: 70%;
+    background-color: white;
+}
+
+.ourteam{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(210, 105, 30, 0.507);
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.title{
+    background-color: rgba(210, 105, 30, 0.507);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.history{
+    text-align: left;
+    padding: 10px 10px;
+    font-size: 20px;
+    background-color: rgba(210, 105, 30, 0.507);
+    border: 0.5px white solid;
+}
+
+.ourteam :hover{
+    opacity: 70%;
+    background-color: white;
+}
+
+.team img{
+    width: 300px;
+    height: 200px;
+}
+.team{
+    text-align: center;
+    border: 3px white solid;
+}
+.team h4{
+    color: rgb(82, 82, 82);
+}
+
+footer{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgba(147, 67, 4);
+}
+
+.regform{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: rgba(210, 105, 30, 0.507);
+}
+
+form{
+    border: 0.5px white solid;
+    border-radius: 5%;
+    padding: 10px 10px;
+}
+.submitbtn{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width:810px) {
+    *{
+        font-size: 15px;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    header img{
+        width: 100vw;
+        height: 40vw;
+    }
+    .descimg{
+        padding: 0vw 5vw;
+    }
+    .descimg img{
+        width: 50vw;
+        height: 100vw;
+    }
+
+    .eventsimg{
+        padding: 0vw 5vw;
+    }
+    .eventsimg img{
+        width: 50vw;
+        height: 100vw;
+    }
+}
